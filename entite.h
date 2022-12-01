@@ -14,8 +14,9 @@ char statut_social[50];
 char addresse[50];
 int code_postal;
 char gouvernorat[50];
+char role [50];
+char bureau_de_vote[50];
 char email[50];
-char role[50];
 }User;
 
 void TPHF( char * filename, int * f, int *h);

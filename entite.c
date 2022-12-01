@@ -11,7 +11,7 @@ float nbrh=0,nbrf=0;
 FILE *file=fopen(filename, "r");
 if(file!=NULL)
 {
-while(fscanf(file," %s %s %s %s %s %d %s %s %s %d %s %s %s",u.identifiant,u.nom,u.prenom,u.date_de_naissance,u.lieu_de_naissance,&u.age,u.genre,u.statut_social,u.addresse,&u.code_postal,u.gouvernorat,u.email,u.role)!= EOF)
+while(fscanf(file,"%s %s %s %s %s %d %s %s %s %d %s %s %s %s ",u.identifiant,u.nom,u.prenom,u.date_de_naissance,u.lieu_de_naissance,&u.age,u.genre,u.statut_social,u.addresse,&u.code_postal,u.gouvernorat,u.role,u.bureau_de_vote,u.email)!= EOF)
 {
 if(strcmp(u.role,"electeur")==0)
 	{
@@ -48,7 +48,7 @@ float nbre=0,age_total=0;
 FILE *file=fopen(fichierusers, "r");
 if(file!=NULL)
 {
-while(fscanf(file," %s %s %s %s %s %d %s %s %s %d %s %s %s",u.identifiant,u.nom,u.prenom,u.date_de_naissance,u.lieu_de_naissance,&u.age,u.genre,u.statut_social,u.addresse,&u.code_postal,u.gouvernorat,u.email,u.role)!= EOF)
+while(fscanf(file," %s %s %s %s %s %d %s %s %s %d %s %s %s %s ",u.identifiant,u.nom,u.prenom,u.date_de_naissance,u.lieu_de_naissance,&u.age,u.genre,u.statut_social,u.addresse,&u.code_postal,u.gouvernorat,u.role,u.bureau_de_vote,u.email)!= EOF)
 {
 	if (strcmp(u.role,"electeur")==0)
 		{
